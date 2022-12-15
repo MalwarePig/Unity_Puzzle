@@ -3087,6 +3087,7 @@ MonoBehaviour:
   CamaraPrincipal: {fileID: 0}
   PiezaSeleccionada: {fileID: 0}
   Cronometro: {fileID: 1473034393}
+  textPoema: {fileID: 1050146072}
   PiezasEncajadas: 0
 --- !u!20 &519420031
 Camera:
@@ -11606,7 +11607,7 @@ GameObject:
   - component: {fileID: 1050146073}
   - component: {fileID: 1050146072}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextPoema
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
