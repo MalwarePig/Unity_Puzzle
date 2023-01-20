@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -35,7 +35,7 @@ public class juego : MonoBehaviour
                 "Seimpre recuerda que te quiero mucho más que tú",
                 "Porque tiene unos ojillos que me miran entornados muy gachones y muy pillos, muy pillos, muy pillos",
                 "Pinche vieja arrogante, flaca escuálida, buenérrima, inmamable, deliciosa, envidioa... Es perfecta.",
-                "Eres más de lo que buscaba y mucho mas de lo que merezco"
+                "Eres más de lo que buscaba y mucho más de lo que merezco"
             };
 
     void Start()
@@ -53,15 +53,10 @@ public class juego : MonoBehaviour
     }
 
     void Update()
-    { 
+    {
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit2D hit =
-                Physics2D
-                    .Raycast(Camera
-                        .main
-                        .ScreenToWorldPoint(Input.mousePosition),
-                    Vector2.zero);
+            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition),Vector2.zero);
             if (hit)
             {
                 if (hit.transform.CompareTag("Puzzle"))
@@ -99,7 +94,6 @@ public class juego : MonoBehaviour
         if (PiezasEncajadas == 36)
         {
             Cronometro.GetComponent<Tiempo>().escribirRecord(); //se comprueba el record
-
             if (
                 PlayerPrefs.GetString("Propuesta") == "Si" //Se muestra propuesta o poemas si ya esta respondido
             )
